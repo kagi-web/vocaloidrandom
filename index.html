@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ランダムにボカロを10曲表示します">
+  <meta property="og:title" content="ボカロランダムメーカー">
+  <meta property="og:description" content="ランダムにボカロを10曲表示します">
+  <meta name="twitter:card">
+
+  <title>ボカロランダムメーカー</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h2>ボカロランダムメーカー</h2>
+  <h3>ランダムにボカロを10曲表示します</h3>
+  <div class="search-box">
+
+      <div class="field">
+        <label>ジャンル</label>
+        <select id="tag1">
+          <option value="">指定なし</option>
+          <option value="481">ロック</option>
+          <option value="341">ポップ</option>
+          <option value="434">和風</option>
+          <option value="29">バラード</option>
+          <option value="1552">EDM</option>
+          <option value="467">ジャズ</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>タグ</label>
+        <select id="tag2">
+          <option value="">指定なし</option>
+          <option value="6565">かっこいい</option>
+          <option value="81">かわいい</option>
+          <option value="384">切ない</option>
+          <option value="369">爽やか</option>
+          <option value="50">落ち着く</option>
+        </select>
+      </div>
+
+    <button id="searchBtn">検索</button>
+  </div>
+
+  <div class="attention">
+    <p>ジャンルとタグの組み合わせによっては候補の楽曲が少ない場合があります</p>
+    <p>サムネイル、リンクがない楽曲が生成される場合があります</p>
+    <p>エラーが出る場合は再読み込み等お願いします</p>
+  </div>
+
+
+  <div class="row header">
+    <div></div>
+    <div class="header-title">楽曲</div>
+    <div class="header-link">リンク</div>
+  </div>
+
+  <div id="results">
+
+  </div>
+
+<div id="shareArea">
+  <button id="shareBtn">Xでシェア</button>
+</div>
+
+<p class="license">
+   <a href="https://vocadb.net/" target="_blank">Data provided by VocaDB</a>
+</p>
+ 
+</div>
+<script src="script.js"></script>
+</body>
+</html>
